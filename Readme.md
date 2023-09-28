@@ -49,7 +49,7 @@ kubectl delete -f v1.yaml 	# delete with template deploy
 
 
 ## References
-[!DevopsJourney]{https://youtu.be/1Lu1F94exhU?si=4xuEPHS9Z0gm3c8F}
+[!DevopsJourney](https://youtu.be/1Lu1F94exhU?si=4xuEPHS9Z0gm3c8F)
 
 
 ## Question
