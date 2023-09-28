@@ -1,10 +1,10 @@
 # Làm quen với Kubernetes - K8S
 - 
 
-## 1. Khoi dong k8s
+## 1. Khởi động k8s
 - Khởi động with K8s trên Docker Desktop
 - minikube :
-	- 1 dạng tạo cluser thông qua container docker
+	- một dạng tạo cluser thông qua container docker
 	- Hỗ trợ thêm giao diện quản lý kubernetes
 	```
 	minikube dashboard
@@ -40,13 +40,13 @@ minikube service hello-node
 //On cloud providers that support load balancers, an external IP address would be provisioned to access the Service. On minikube, the LoadBalancer type makes the Service accessible through the minikube service command.
 ```
 ## 4 Command with deployment
-
+```
 kubectl deploy -f v1.yaml	#tạo deploy with template
 kubectl get pods			# 
 kubectl get deployment   	 # lấy ra thông tin apps đã được deploy with k8s
 kubectl describe
 kubectl delete -f v1.yaml 	# delete with template deploy
-
+```
 
 ## References
 [!DevopsJourney](https://youtu.be/1Lu1F94exhU?si=4xuEPHS9Z0gm3c8F)
