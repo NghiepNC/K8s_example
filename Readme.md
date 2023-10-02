@@ -53,6 +53,15 @@ kubectl delete -f v1.yaml 	# delete with template deploy
 
 
 ## Question
-Sao deploy với k8s cần lệnh 
-```minikube service mywebapp```
+Q: Sao deploy với k8s cần lệnh 
+```sh
+minikube service mywebapp
+```
 Còn bên helm thì không?
+
+=> A : Helm có sử dụng service và port-forward nhớ hem 
+
+	```sh
+	servicename=$(kubectl get service -l "app={{ .Values.appName }}" -o jsonpath="{.items[0].metadata.name}")
+	kubectl --namespace {{ .Values.namespace}} port-forward service/{{ .Values.appName }} 8888:80
+	```
